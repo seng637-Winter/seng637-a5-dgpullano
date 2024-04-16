@@ -66,20 +66,20 @@ We found that by running the 2 models up to data point 20 (where the largest cha
 
 When comparing the metrics in Table 2 above with the initial metrics found in Table 1, it can be seen that the AIC, BIC, and SSE values have decreased.
 By running initial estimation of the 2 models up to the first 20 data points (approximataly a 65% subset of the original data), and then predicting the remaining 11 intervals with the efforts per interval of (E = 0, F = 24, C = 3), we were able to make the following improvements:
-	- IFRGSB (E, F, C):
-		- AIC improved by ___ from ___ to ___ (__%)
-		- BIC improved by ___ from ___ to ___ (__%)
-		- SSE improved by ___ from ___ to ___ (__%)
-	- DW3 (F):
-		- AIC improved by ___ from ___ to ___ (__%)
-		- BIC improved by ___ from ___ to ___ (__%)
-		- SSE improved by ___ from ___ to ___ (__%)
+- IFRGSB (E, F, C):
+     - AIC improved by ___ from ___ to ___ (__%)
+     - BIC improved by ___ from ___ to ___ (__%)
+     - SSE improved by ___ from ___ to ___ (__%)
+- DW3 (F):
+     - AIC improved by ___ from ___ to ___ (__%)
+     - BIC improved by ___ from ___ to ___ (__%)
+     - SSE improved by ___ from ___ to ___ (__%)
 		
 These changes can be seen visually in Figures 3 and 4 below and can be compared against Figures 1 and 2, respectively:
 
-![Figure 3: Range Analysis MVF Graph for 2 Best Models](Submission_Screenshots/RGT_Initial_MVF_Graph_2Best.png)
+![Figure 3: Range Analysis MVF Graph for 2 Best Models](Submission_Screenshots/RGT_MVF_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
-![Figure 4: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Initial_Intensity_Graph_2Best.png)
+![Figure 4: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Intensity_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
 When comparing the MVF graphs in Figures 1 and 3, it can be seen that...
 
