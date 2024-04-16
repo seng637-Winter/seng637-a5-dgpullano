@@ -15,6 +15,8 @@
 
 # Assessment Using Reliability Growth Testing 
 
+#
+
 ## Result of Model Comparison (Selecting Top Two Models)
 For the first part of this report, we decided to use C-SFRAT to visualize the hypothetical SUT from the failure data provided to us. The windows executable for this was downloaded from the provided GitHub link. 
 The document found at https://www.sciencedirect.com/science/article/pii/S2352711021001588 was read to gain a better understanding of how to use the C-SFRAT application and interpret its output results.
@@ -47,7 +49,7 @@ The other 2 models considered for second place were as follows:
 If we made our decision based on the AIC and BIC metrics alone, the second best model would have been model 37, since the AIC and BIC values for model 37 were lower than that of model 14 by 20.702 and 25.004 respectively,
 However, the SSE for model 14 was much lower than that of model 37 by 154.338. For this reason, we decided that the second best model performance was attributed to model 14.
 
-Visualizations for MVF and Intensity graphs for these 2 best performing models are presented below:
+Visualizations for MVF and Intensity graphs for these 2 best performing models once they were re-ran through the system without most of the other models are presented below:
 
 ![Figure 1: Initial MVF Graph for 2 Best Models](Submission_Screenshots/RGT_Initial_MVF_Graph_2Best.png)
 
@@ -57,9 +59,10 @@ There is then an inflection point which reverses this relationship to that the p
 ![Figure 2: Initial Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Initial_Intensity_Graph_2Best.png)
 
 Looking at the initial intensity graph above, it can be seen that even in the best performing models, there are still several areas where the dataset intensities are much higher than those predicted by the 2 models (i.e. data points 2, 19, 20, 21, 22).
-There are also a couple of spots where the dataset intensities are much lower than those predicted by the 2 models (i.e. data points 3, 6, 7, 16, 24).
+There are also several locations where the dataset intensities are much lower than those predicted by the 2 models (i.e. data points 3, 6, 7, 16, 24).
 This suggests that the models can be improved through performing a range analysis on these 2 best models.
 
+#
 
 ## Result of Range Analysis (Which Part of Data is Good for Proceeding with Analysis)
 Now that the 2 best models have been identified, the next step was to perform a range analysis using subsets of the provided dataset to identify which part of the data is good for proceeding forward.
@@ -75,32 +78,33 @@ We found that by running the 2 models up to data point 20 (where the largest cha
 When comparing the metrics in Table 2 above with the initial metrics found in Table 1, it can be seen that the AIC, BIC, and SSE values have decreased.
 By running initial estimation of the 2 models up to the first 20 data points (approximataly a 65% subset of the original data), and then predicting the remaining 11 intervals with the efforts per interval of (E = 0, F = 24, C = 3), we were able to make the following improvements:
 - IFRGSB (E, F, C):
-     - AIC improved by ___ from ___ to ___ (__%)
-     - BIC improved by ___ from ___ to ___ (__%)
-     - SSE improved by ___ from ___ to ___ (__%)
+     - AIC improved by ___ from ___ to ___ (__% improvement)
+     - BIC improved by ___ from ___ to ___ (__% improvement)
+     - SSE improved by ___ from ___ to ___ (__% improvement)
 - DW3 (F):
-     - AIC improved by ___ from ___ to ___ (__%)
-     - BIC improved by ___ from ___ to ___ (__%)
-     - SSE improved by ___ from ___ to ___ (__%)
+     - AIC improved by ___ from ___ to ___ (__% improvement)
+     - BIC improved by ___ from ___ to ___ (__% improvement)
+     - SSE improved by ___ from ___ to ___ (__% improvement)
 		
 These changes can be seen visually in Figures 3 and 4 below and can be compared against Figures 1 and 2, respectively:
 
 ![Figure 3: Range Analysis MVF Graph for 2 Best Models](Submission_Screenshots/RGT_MVF_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
-![Figure 4: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Intensity_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
-
 When comparing the MVF graphs in Figures 1 and 3, it can be seen that...
+
+![Figure 4: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Intensity_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
 When comparing the intensity graphs in Figures 2 and 4, it can be seen that...
 
+#
 
-## Discussion on Decision Making Given A Target Failure Rate
+## Discussion on Decision Making (Given A Target Failure Rate)
 
-
+#
 
 ## Discussion on Advantages and Disadvantages of Reliability Growth Analysis
 
-
+#
 
 
 # Assessment Using Reliability Demonstration Chart 
