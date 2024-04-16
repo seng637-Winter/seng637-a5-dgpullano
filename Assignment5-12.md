@@ -41,17 +41,25 @@ With these metrics under consideration, we had narrowed the best models down to 
 
 For all metrics considered, model 32 that used the DW3 (Discrete Weibull-Type III) hazard function with the F (Failure identification work measured in person hours) covariate produced the best results of 122.199, 127.935, and 528.046 respectively.
 The other 2 models considered for second place were as follows:
-	- Model 14 that used the IFRGSB (IFR Generalized Salvia and Bollinger) hazard function with the E (Execution time measured in hours), F, and C(Computer time failure identification measured in hours) covariates. 
-	- Model 37 that used the GM (Geometric) hazard function with the F covariate.
+- Model 14 that used the IFRGSB (IFR Generalized Salvia and Bollinger) hazard function with the E (Execution time measured in hours), F, and C(Computer time failure identification measured in hours) covariates. 
+- Model 37 that used the GM (Geometric) hazard function with the F covariate.
 	
 If we made our decision based on the AIC and BIC metrics alone, the second best model would have been model 37, since the AIC and BIC values for model 37 were lower than that of model 14 by 20.702 and 25.004 respectively,
 However, the SSE for model 14 was much lower than that of model 37 by 154.338. For this reason, we decided that the second best model performance was attributed to model 14.
 
-Visualizations for MVF and Intensity graphs for these 2 models are presented below:
+Visualizations for MVF and Intensity graphs for these 2 best performing models are presented below:
 
 ![Figure 1: Initial MVF Graph for 2 Best Models](Submission_Screenshots/RGT_Initial_MVF_Graph_2Best.png)
 
+Looking at the initial MVF graph above, it can be seen that the model predictions are generally lower than the actual data points between intervals 2 - 9.
+There is then an inflection point which reverses this relationship to that the predictions are generally higher until around iteration 22.
+
 ![Figure 2: Initial Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Initial_Intensity_Graph_2Best.png)
+
+Looking at the initial intensity graph above, it can be seen that even in the best performing models, there are still several areas where the dataset intensities are much higher than those predicted by the 2 models (i.e. data points 2, 19, 20, 21, 22).
+There are also a couple of spots where the dataset intensities are much lower than those predicted by the 2 models (i.e. data points 3, 6, 7, 16, 24).
+This suggests that the models can be improved through performing a range analysis on these 2 best models.
+
 
 ## Result of Range Analysis (Which Part of Data is Good for Proceeding with Analysis)
 Now that the 2 best models have been identified, the next step was to perform a range analysis using subsets of the provided dataset to identify which part of the data is good for proceeding forward.
