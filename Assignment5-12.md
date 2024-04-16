@@ -1,0 +1,66 @@
+**SENG 637- Dependability and Reliability of Software Systems***
+
+**Lab. Report \#5 – Software Reliability Assessment**
+
+| Group \#:       |   |
+|-----------------|---|
+| Student Names:  |   |
+|                 |   |
+|                 |   |
+|                 |   |
+
+# Introduction
+
+# 
+
+# Assessment Using Reliability Growth Testing 
+For the first part of this report, we decided to use C-SFRAT to visualize the hypothetical SUT from the failure data provided to us. The windows executable for this was downloaded from the provided GitHub link. 
+The document found at https://www.sciencedirect.com/science/article/pii/S2352711021001588 was read to gain a better understanding of how to use the C-SFRAT application and interpret its output results.
+
+Initially, we imported the provided failure data and ran estimations using all combinations of hazard functions and covariate sets. 
+This was done, as we wanted to compare all possible results to explore which models worked well and which did not. 
+
+We decided to use the Akaike Information Criterion (AIC), Bayesian Information Criteria (BIC), and sum of squares (SSE) as measures for goodness-of-fit to evaluate the different hazard function models that use various covariate combinations as inputs. 
+
+The AIC uses the log-likelihood measure as its initial estimate [https://builtin.com/data-science/what-is-aic], but then applies a penalty term to account for the complexity of the model (i.e. how many parameters the model uses).
+The BIC is calculated in a similar process to the AIC, where it starts with the log-likeliness value and applies a penalty term based on the number of model parameters used [https://medium.com/@analyttica/what-is-bayesian-information-criterion-bic-b3396a894be6]. 
+The difference between the two is that the BIC introduces a penalty term that is larger than the one applied in the AIC calculation.
+
+The reason we decided to use the AIC and BIC instead of the log-likelihood metric, was that the models being compared against each other in this assignment have a different number of covariates that are included in them. 
+We believe that it is not good practice to use log-likeliness for all models in this assignment because the ones with a larger number of covariates will likely produce more model parameters and an artificially higher log-likelihood value.
+A model that produces a lower AIC or BIC value fits the data better than other models it is being compared against that have higher AIC or BIC values.
+
+The SSE is the last metric that we decided to use, since it is a simple measure that is calculated by summing the squared differences between the actual failure data and the model predicted data [https://prepnuggets.com/glossary/sum-of-squared-errors/#:~:text=It%20is%20calculated%20by%20summing,indicates%20a%20poorer%20fitting%20model.]. 
+Similar to the AIC and BIC, a lower SSE value is desired when comparing models against each other.
+
+With these metrics under consideration, we had narrowed the best models down to 3 possibilities that can be seen in the table below:
+
+![Table 1: Initial 3 Best Potential Models](Submission_Screenshots/RGT_Initial3Best.png)
+
+For all metrics considered, model 32 that used the DW3 (Discrete Weibull-Type III) hazard function with the F (Failure identification work measured in person hours) covariate produced the best results of 122.199, 127.935, and 528.046 respectively.
+The other 2 models considered for second place were as follows:
+	- Model 14 that used the IFRGSB (IFR Generalized Salvia and Bollinger) hazard function with the E (Execution time measured in hours), F, and C(Computer time failure identification measured in hours) covariates. 
+	- Model 37 that used the GM (Geometric) hazard function with the F covariate.
+	
+If we made our decision based on the AIC and BIC metrics alone, the second best model would have been model 37, since the AIC and BIC values for model 37 were lower than that of model 14 by 20.702 and 25.004 respectively,
+However, the SSE for model 14 was lower than that of model 37 by 154.338. For this reason, we decided that the second best model performance was attributed to model 14.
+
+
+
+
+
+# Assessment Using Reliability Demonstration Chart 
+
+# 
+
+# Comparison of Results
+
+# Discussion on Similarity and Differences of the Two Techniques
+
+# How the team work/effort was divided and managed
+
+# 
+
+# Difficulties encountered, challenges overcome, and lessons learned
+
+# Comments/feedback on the lab itself
