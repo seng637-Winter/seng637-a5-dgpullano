@@ -134,7 +134,21 @@ Through the completion of the first half of this assignment, we were able to ide
 
 # 
 
-# Comparison of Results
+We followed the following process to perform RDC testing:
+
+The first step was to pick a metric from our initial failure data and to convert it into a format that was acceptable for the RDC excel sheet that was provided for this assignment.
+To do this, we first decided that we would use the failure count column (FC), along with the execution time measured in hours (E) to create a new list of failures that occured at specific concurrent times.
+
+For example, if 1 row in the initial failure data was (FC = 4, E = 0.05), we would write 4 new rows in our new table where the 'Count' column went from 1 - 4, and the 'Runtime Since Failure' column would be 0.05 for all 4 new rows. 
+Once this process was applied through all rows of the original failure dataset, we had a total of 92 rows.
+A third column was created in this new table called 'Total Time'. It started at 0 and added the subsequent 'Runtime Since Failure' value in the second column to the total time that was in the row above.
+
+A sample screenshot of this table format after the conversion had been applied can be seen below. This screenshot represents the first 2 rows of the original failure data that was provided to us with the values being (FC = 2, E = 0.05) and (FC = 11, E = 1):
+
+![Table 3: Sample of Failure Input Table After Conversion](Submission_Screenshots/RDC_FailureData_Conversion_Sample.png)
+
+
+# Comparison of Results from Part 1 and Part 2
 
 # Discussion on Similarity and Differences of the Two Techniques
 
