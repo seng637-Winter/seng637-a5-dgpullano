@@ -201,8 +201,21 @@ The key difference between the 2 approaches could be explained by saying that th
 
 # How the team work/effort was divided and managed
 
+We split the project initially, where the 2 people who had windows computers worked on part 1 and the other 3 people with Macs worked on Part 2.
+This was due to the fact that we couldn't figure out how to get C-SFRAT to run on the Macs.
 
+Once we had our initial results, we met back up as a team and started to format the report. 
+We met over a Discord meeting and one group member started adding in commits for each section.
+Finally, we reviewed the report and submitted.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
+We found that for both sections of the report, the software that was provided to us was very finicky to use. 
+In some instances, the instructions in the applications on how to use them did not work as described.
+When difficulties like these swere encountered, we would call each other to get advice and brainstormon how to proceed.
+
 # Comments/feedback on the lab itself
+
+The assignment handout was put together well, but some of the reference links no longer work. 
+The amount of options of software to choose from for the first section was confusing at first, but once we decided that we were going to use C-SFRAT, it made more sense.
+Overall, we enjoyed completing this assignment and we believe that we have learned more about RGT and RDC approaches to testing a SUT. 
