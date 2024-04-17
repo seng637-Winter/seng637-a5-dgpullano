@@ -2,15 +2,19 @@
 
 **Lab. Report \#5 – Software Reliability Assessment**
 
-| Group \#:       |   |
+| Group \#: 12    |   |
 |-----------------|---|
-| Student Names:  |   |
-|                 |   |
-|                 |   |
-|                 |   |
+| Student Names:  | Gi-E Thang     |
+|                 | Dillon Pullano |
+|                 | Andrew Lee     |
+|                 | Johnathan Lui  |
+|                 | Yaad Sra       |
 
 # Introduction
 
+In this assignment we will be working with Reliability Growth Testing (RGT) and Reliability Demonstration Chart (RDT).
+We will discuss the processes that were followed to explore these concepts, as well as present and discuss our results.
+Finally, we will compare these approaches to testing and discuss the advantages and disadvantages of both.
 
 #
 
