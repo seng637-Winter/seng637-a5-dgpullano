@@ -90,11 +90,13 @@ These changes can be seen visually in Figures 3 and 4 below and can be compared 
 
 ![Figure 3: Range Analysis MVF Graph for 2 Best Models](Submission_Screenshots/RGT_MVF_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
-When comparing the MVF graphs in Figures 1 and 3, it can be seen that...
+When comparing the MVF graph above with that of our initial runs, it can be seen that both models are tighter to the various failure intervals after our modifications.
+Similar patterns of the estimations being under the actual failures between interval 2 - 9 and over the actual failures between interval 9 - 20 still exist after modifications.
 
 ![Figure 4: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Intensity_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
-When comparing the intensity graphs in Figures 2 and 4, it can be seen that...
+When comparing the intensity graph above with that of our initial runs, there are still several areas where the predicted intensities are lower than the actual failure data (i.e. data points 2, 4, 5, 19, and 20), and there are also still a few areas where the predicted intensities are higher than the actual failure data (i.e. data points 9, 11, and 16).
+Overall, it can be seen that the dataset intensities line up allot better to the model estimations after our modifications were made, where the differences are of less intensity.
 
 #
 
