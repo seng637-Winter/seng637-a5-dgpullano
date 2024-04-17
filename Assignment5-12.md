@@ -130,7 +130,7 @@ Through the completion of the first half of this assignment, we were able to ide
 
 #
 
-# Assessment Using Reliability Demonstration Chart 
+# Assessment Using Reliability Demonstration Chart (3 Plots + Process Followed for Deciding our MTTFmin)
 
 # 
 
@@ -152,7 +152,7 @@ The values were added into the 'Failure Data' tab of the RDC excel sheet as can 
 ![Figure 5: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RDC_DataInputScreenshot.png)
 
 We then adjusted the risk profile by varying the discrimination ratio, the developers risk, and the users risk. 
-We decided on using a discrimination ratio of 1.5 which pulled the acceptable failure rate higher. 
+We decided on using a discrimination ratio of 1.5 which increased the acceptable failure rate. 
 We left the developers risk and users risk as the defaults of 0.1 as can be seen in the screenshot below: 
 
 ![Figure 6: Selected Risk Profile](Submission_Screenshots/RDC_SelectedRiskProfile.png)
@@ -167,15 +167,28 @@ Screenshots of results using half and double the MTTFmin are presented below:
 
 ![Figure 8: RDC_HALF_MTTFmin](Submission_Screenshots/RDC_MTTFhalf.png)
 
+It can be seen in the Figure above that by using half of the MTTFmin, a number of normalized input events are pulled into the unacceptable failure area.
+
 ![Figure 9: RDC_DOUBLE_MTTFmin](Submission_Screenshots/RDC_MTTFdouble.png)
 
-It can be seen in the Figures above that by using half of the ....
+Alternatively, it can be seen in the Figure above that by using double of the MTTFmin, all input events are pulled more into into the acceptable failure area.
 
+## Discussion on Advantages and Disadvantages of of RDC
 
+Through the completion of the second half of this assignment, we were able to identify several advantages and disadvantages to applying a reliability demonstration chart to a SUT:
 
+### Advantages:
+- The visualization is intuitive to understand. Input events being accepted, continued, and rejected are in the green, yellow, and red regions respectively
+- The user can set and adjust different risk profiles
+
+### Disadvantages:
+- Similar to RGT, the excel sheet was difficult to set up. 
+- The sheet provided was very finicky. For example, we couldn't figure out how to adjust the green label to go all the way to the right of the axis.
 
 
 # Comparison of Results from Part 1 and Part 2
+
+
 
 # Discussion on Similarity and Differences of the Two Techniques
 
