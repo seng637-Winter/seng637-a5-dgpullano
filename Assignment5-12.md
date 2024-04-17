@@ -11,7 +11,7 @@
 
 # Introduction
 
-# 
+
 
 # Assessment Using Reliability Growth Testing 
 
@@ -78,13 +78,13 @@ We found that by running the 2 models up to data point 20 (where the largest cha
 When comparing the metrics in Table 2 above with the initial metrics found in Table 1, it can be seen that the AIC, BIC, and SSE values have decreased.
 By running initial estimation of the 2 models up to the first 20 data points (approximataly a 65% subset of the original data), and then predicting the remaining 11 intervals with the efforts per interval of (E = 0, F = 24, C = 3), we were able to make the following improvements:
 - IFRGSB (E, F, C):
-     - AIC improved by ___ from ___ to ___ (__% improvement)
-     - BIC improved by ___ from ___ to ___ (__% improvement)
-     - SSE improved by ___ from ___ to ___ (__% improvement)
+     - AIC improved by 65.315 from 146.025 to 80.710    --> (44.7% improvement)
+     - BIC improved by 67.944 from 154.629 to 86.685    --> (43.9% improvement)
+     - SSE improved by 489.954 from 605.317 to 115.363  --> (80.9% improvement)
 - DW3 (F):
-     - AIC improved by ___ from ___ to ___ (__% improvement)
-     - BIC improved by ___ from ___ to ___ (__% improvement)
-     - SSE improved by ___ from ___ to ___ (__% improvement)
+     - AIC improved by 43.563 from 122.199 to 78.636    --> (35.6% improvement)
+     - BIC improved by 45.316 from 127.935 to 82.619    --> (35.4% improvement)
+     - SSE improved by 254.445 from 528.046 to 273.601  --> (48.2% improvement)
 		
 These changes can be seen visually in Figures 3 and 4 below and can be compared against Figures 1 and 2, respectively:
 
