@@ -139,13 +139,40 @@ We followed the following process to perform RDC testing:
 The first step was to pick a metric from our initial failure data and to convert it into a format that was acceptable for the RDC excel sheet that was provided for this assignment.
 To do this, we first decided that we would use the failure count column (FC), along with the execution time measured in hours (E) to create a new list of failures that occured at specific concurrent times.
 
-For example, if 1 row in the initial failure data was (FC = 4, E = 0.05), we would write 4 new rows in our new table where the 'Count' column went from 1 - 4, and the 'Runtime Since Failure' column would be 0.05 for all 4 new rows. 
-Once this process was applied through all rows of the original failure dataset, we had a total of 92 rows.
-A third column was created in this new table called 'Total Time'. It started at 0 and added the subsequent 'Runtime Since Failure' value in the second column to the total time that was in the row above.
+For example, if 1 row in the initial failure data was (FC = 2, E = 0.05), we would write 2 new rows in our new table where the 'Count' column went from 1 - 2, and the 'Runtime Since Failure' column would be 0.05 for both new rows. 
+A third column was then created in this new table called 'Total Time'. It started at 0 and added the subsequent 'Runtime Since Failure' value in the second column to the total time that was in the row above.
 
 A sample screenshot of this table format after the conversion had been applied can be seen below. This screenshot represents the first 2 rows of the original failure data that was provided to us with the values being (FC = 2, E = 0.05) and (FC = 11, E = 1):
 
 ![Table 3: Sample of Failure Input Table After Conversion](Submission_Screenshots/RDC_FailureData_Conversion_Sample.png)
+
+Once this table was completed using the process described above, we had a total of 92 rows that could be used as failure data input to the RDC excel sheet provided to us.
+The values were added into the 'Failure Data' tab of the RDC excel sheet as can be seen in the screenshot below. The normalized X values were then generated from formulas in the excel sheet:
+
+![Figure 5: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RDC_DataInputScreenshot.png)
+
+We then adjusted the risk profile by varying the discrimination ratio, the developers risk, and the users risk. 
+We decided on using a discrimination ratio of 1.5 which pulled the acceptable failure rate higher. 
+We left the developers risk and users risk as the defaults of 0.1 as can be seen in the screenshot below: 
+
+![Figure 6: Selected Risk Profile](Submission_Screenshots/RDC_SelectedRiskProfile.png)
+
+Now that we had imported our failure data and set the risk profile, we set the number of input events in the failure data tab to 31 (initial failure data file length).
+The maximum acceptable number of failures was then adjusted to determine the value to use for the MTTFmin. 
+We found that for the MTTFmin, the maximum acceptable number of failures was set to 200. This is shown in the Figure below:
+
+![Figure 7: RDC_MTTFmin](Submission_Screenshots/RDC_MTTFmin.png)
+
+Screenshots of results using half and double the MTTFmin are presented below:
+
+![Figure 8: RDC_HALF_MTTFmin](Submission_Screenshots/RDC_MTTFhalf.png)
+
+![Figure 9: RDC_DOUBLE_MTTFmin](Submission_Screenshots/RDC_MTTFdouble.png)
+
+It can be seen in the Figures above that by using half of the ....
+
+
+
 
 
 # Comparison of Results from Part 1 and Part 2
