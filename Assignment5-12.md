@@ -186,15 +186,22 @@ Through the completion of the second half of this assignment, we were able to id
 - The sheet provided was very finicky. For example, we couldn't figure out how to adjust the green label to go all the way to the right of the axis.
 
 
-# Comparison of Results from Part 1 and Part 2
-
-
-
 # Discussion on Similarity and Differences of the Two Techniques
+
+While there are similar concepts involved between part 1 (Reliability Growth Testing) and part 2 (Reliability Demonstration Chart) of this report, they perform differently.
+
+With reliability growth testing, we explored using various models with multiple sets of covariates as inputs to figure out which worked best with our failure data.
+We then varied the ranges of the amount of the initial dataset that was used to fit the model, and adjusted intensity parameters for estimating the rest of the epochs to validate the model.
+
+With modelling the failure data using a reliability demonstration chart, it helped us understand what the minimum number of failures we would need to set to match the input dataset.
+We were able to adjust the risk profile associated with this as well.
+
+The key difference between the 2 approaches could be explained by saying that the first approach is used to model your failures so that you can learn more about your system to optimize it in the future, while the second approach is used to evaluate the system and provide a level of confidence for it.
+
 
 # How the team work/effort was divided and managed
 
-# 
+
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
