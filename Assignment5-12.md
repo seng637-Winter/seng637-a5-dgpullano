@@ -12,6 +12,7 @@
 # Introduction
 
 
+#
 
 # Assessment Using Reliability Growth Testing 
 
@@ -113,10 +114,21 @@ In contrast with this, having a target failure rate that is very high could resu
 
 These types of considerations need to be managed appropriately through different stages of software development so that a high quality product can be produced that meets expectations while not being a drain on resources.
 
-## Discussion on Advantages and Disadvantages of Reliability Growth Analysis
+## Discussion on Advantages and Disadvantages of Reliability Growth Testing Analysis
+
+Through the completion of the first half of this assignment, we were able to identify several advantages and disadvantages to applying reliability growth testing to a SUT:
+
+### Advantages:
+- A SUT can be evaluated using many types of models. 
+- These models can be evaluated using different subsets of covariates, which allows the tester to learn about which covariates have a larger effect on the model
+- Metrics such as AIC, BIC, and SSE can be calculated by comparing model estimated values with the original failure data. These can then be interpretted in an intuitive fashion to rank the performances of various models.
+
+### Disadvantages:
+- Performing reliability growth testing requires specialized software. We found that the software was not able to run consistently on different types of OS (Mac vs. PC)
+- When performing range analyses, it was a very tedious process to find the range at which the failure data should have been truncated at for each model before estimating the remaining data points for validation. Even though we were able to improve the performance of our models by at least 35% across all evaluation metrics, it is likely that there is a better solution that we did not find.
+- The performance of the models are dependent on the model used. While this could be seen as an advantage (as new models can be added), it is also a disadvantage in that the right model needs to be identified to match with the SUT that is being tested.
 
 #
-
 
 # Assessment Using Reliability Demonstration Chart 
 
