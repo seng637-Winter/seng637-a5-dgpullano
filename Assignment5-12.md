@@ -96,13 +96,22 @@ Similar patterns of the estimations being under the actual failures between inte
 ![Figure 4: Range Analysis Intensity Graph for 2 Best Models](Submission_Screenshots/RGT_Intensity_DataPoint20ExtendedTo31_E_0_F_24_C_3.png)
 
 When comparing the intensity graph above with that of our initial runs, there are still several areas where the predicted intensities are lower than the actual failure data (i.e. data points 2, 4, 5, 19, and 20), and there are also still a few areas where the predicted intensities are higher than the actual failure data (i.e. data points 9, 11, and 16).
+
 Overall, it can be seen that the dataset intensities line up allot better to the model estimations after our modifications were made, where the differences are of less intensity.
 
 #
 
 ## Discussion on Decision Making (Given A Target Failure Rate)
 
-#
+The first thing to consider when making any decisions related to targetted failure rate while performing reliability growth testing is to determine what the acceptable targetted failure rate is for the type of SUT you are working with.
+This could be based on common industry standards for the type of SUT you are working with if they exist, or from user/client expected failure rates.
+For a comparison example, there is a different acceptable target failure rate that should be applied when testing an app that shows images of cats vs. a system that manages life support systems on a spacecraft.
+
+It is also important to keep in mind that all SUT scenarios will fail at one point or another, and that expectations should be managed accordingly. 
+Having an unnecessarily low target failure rate could result in a larger number of resources being allocated to software development that could be spent more efficiently in other parts of overall product development.
+In contrast with this, having a target failure rate that is very high could results in a SUT that doesn't meet user/client expectations, or one that doesnt work entirely.
+
+These types of considerations need to be managed appropriately through different stages of software development so that a high quality product can be produced that meets expectations while not being a drain on resources.
 
 ## Discussion on Advantages and Disadvantages of Reliability Growth Analysis
 
